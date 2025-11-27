@@ -1,0 +1,97 @@
+/* Base Styles */
+body {
+    background-color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container with Neumorphism */
+.container {
+    background: #e0e0e0;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow:
+        8px 8px 16px #bebebe,
+        -8px -8px 16px #ffffff;
+    text-align: center;
+}
+
+/* Heading Style */
+.container h1 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    /* border-collapse: collapse; */
+    background: #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow:
+        inset 6px 6px 12px #bebebe,
+        inset -6px -6px 12px #ffffff;
+    border: 1px solid #bdbdbd;
+
+}
+
+/* Table Header */
+th {
+    padding: 15px;
+    background: #e0e0e0;
+    color: #333;
+    text-align: left;
+    font-size: 1.1em;
+    border-bottom: 1px solid #bdbdbd;
+}
+
+/* Table Data */
+td {
+    padding: 15px;
+    color: #555;
+    border-bottom: 1px solid #bdbdbd;
+}
+
+/* Alternate Row Colors */
+tbody tr:nth-child(odd) {
+    background: #e0e0e0;
+}
+
+table,
+th,
+td {
+    border: 1px solid #bdbdbd;
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(even) {
+    background: #e0e0e0;
+}
+
+/* Hover Effect */
+tbody tr:hover {
+    box-shadow: inset 6px 6px 12px #bebebe,
+        inset -6px -6px 12px #ffffff;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+}
