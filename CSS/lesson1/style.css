@@ -1,38 +1,21 @@
-/* global css */
-* {
+h3{
+    color:blue
+}
+h4{
+    color:rgb(199, 64, 15)
+}
+.myclass{
+    color:goldenrod
+}
+#myid{
+    color:rgb(235, 27, 200)
+}
+
+h5,p{
+    color:rgb(51, 223, 28)
+}
+
+*{
     font-size: 30px;
-    font-weight: 500;
-}
-
-/* External CSS */
-h3 {
-    color: blue;
-}
-
-/* element selector */
-h4 {
-    color: palevioletred;
-}
-
-/* class selector */
-.myclass {
-    color: darkorange;
-}
-
-/* id selector */
-#myid {
-    color: mediumpurple;
-}
-
-/* group selector */
-h5,
-p {
-    color: maroon;
-}
-h1 {
-    color: blue;
-}
-
-p {
-    text-align: right;
+    font-weight:500;
 }

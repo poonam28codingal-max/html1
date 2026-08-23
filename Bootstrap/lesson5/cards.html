@@ -9,26 +9,75 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
     </script>
+    <style>
+        body
+        {
+            background-color: aliceblue;
+        }
+        .navbar{
+            background-color: blue;
+        }
+        .navbar-brand .nav-link
+        {
+            color:rgb(249, 253, 253);
+        }
+    </style>
 </head>
 
 <body>
-    <!-- <h1 style="color:orange;text-align:center;">
-        Codingal
-    </h1>
-	 -->
-    <div class="container mt-5">
-        <div class="card " style="width: 18rem;">
-            <img class="card-img-top"
-                src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"
-                alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">User Name</h5>
-                <p class="card-text">Passionate about programming.</p>
+    <nav  class="navbar navbar-expand-sm">
 
-                <a href="#" class="btn btn-primary">See Profile</a>
+        <a class="navbar-brand" href="#">Planet Explorer</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a> </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="#">Planets</a> 
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Stars</a> 
+            </li>
+        </ul>
+
+    </nav>
+<div class="container mt-4">
+    <h4 class="section-title">Scanning the Galaxy</h4>
+    <div class="spinner-border text-warning" role="status"></div>
+
+    <h4 class="section-title">Featured Planet</h4>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Earth</h2>
+                    <p class="card-text">Our Home Planet</p>
+                    <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Earth</h2>
+                    <p class="card-text">Our Home Planet</p>
+                    <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Earth</h2>
+                    <p class="card-text">Our Home Planet</p>
+                    <a href="#" class="btn btn-primary">Explore</a>
+                </div>
             </div>
         </div>
     </div>
+</div>
+
+
 </body>
 
 </html>

@@ -1,0 +1,13 @@
+body{
+     background-color:darkblue;
+     background-image:linear-gradient(to bottom,darkblue,rgb(84, 101, 199));
+     background-repeat: no-repeat;
+     background-position:top center;
+     font-family: Arial, Helvetica, sans-serif;
+}
+.page-header{
+    background-image:linear-gradient(to right,purple,coral);
+    color:white;
+    text-align: center;
+    border-radius: 20px;
+}

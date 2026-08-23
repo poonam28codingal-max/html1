@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <style>
+            /*Animation Code*/
+            @keyframes example {
+                0% {background-color: red;}
+                25% {background-color: yellow;}
+                50% {background-color: blue;}   
+                75% {background-color: green;}
+                100% {background-color: rgb(220, 16, 176);}
+                
+                }   
+            /*Applying Animation to the element*/
+            div{
 
-<head>
-    <style>
-        body {
-            background-color: yellow;
-            background-image: url("ball.png");
-            background-repeat: no-repeat;
-            background-position: top right;
-            background-attachment: fixed;
+                animation-name: example;
+                animation-duration: 10s;
+                width:300px;    
+                height: 300px;
+                background-color: red;
 
+            }
 
-        }
-    </style>
+        </style>
+    </head>
 
-<body>
-    Hello world
-
-</body>
+    <body>
+        <div>
+            Welcome to my website
+        </div>
+    </body>
+  
 
 </html>

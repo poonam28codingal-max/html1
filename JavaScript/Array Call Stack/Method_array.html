@@ -7,14 +7,15 @@
     <p>The join() method joins array elements into a string and the pop() method removes the last element from an array.
     </p>
     <p id="myjoin"></p>
-    <p id="myfirstpop"></p>
-    <p id="mysecondpop"></p>
+    <p id="print_array"></p>
+    <p id="mypop"></p>
     <script>
         var fruits = ["Banana", "Orange", "Apple", "Mango"];
-        document.getElementById("myjoin").innerHTML = fruits.join(" * ");
-        document.getElementById("myfirstpop").innerHTML = fruits;
+        document.getElementById("myjoin").innerHTML = fruits.join("  &");
+        document.getElementById("print_array").innerHTML = fruits;
         fruits.pop();
-        document.getElementById("mysecondpop").innerHTML = fruits;
+        document.getElementById("mypop").innerHTML = fruits;
+        
     </script>
 </body>
 

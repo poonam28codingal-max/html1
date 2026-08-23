@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <p> Multiply every Element in Array with 10 </p>
+        <p id="product_value"></p>
+        <p id="result"></p>
+        <Button onclick="myfunction2()">Calculate Sum</Button>
+        <script>
+            var numbers = [28,7,4,30];
+
+            function myfunction(n1)
+            {
+                  return n1*10;
+            }
+            var new_array = numbers.map(myfunction);
+            document.getElementById("product_value").innerHTML = new_array;
+             
+           
+            function myfunction2()
+            {
+                var x=20;
+                var y=30;
+                
+                var sum = eval("x+y");
+
+                document.getElementById("result").innerHTML = sum;
+            }
+
+        </script>
+    </body>
+</html>

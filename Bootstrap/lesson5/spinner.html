@@ -1,23 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Cards</title>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
 </head>
 
 <body>
+    <h1 style="color:orange;text-align:center;">
+        Codingal
+    </h1>
 
     <div class="container">
-        <h2>Spinners</h2>
-        <p>To create a spinner/loader, use the <code>.spinner-border</code> class:</p>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top"
+                src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"
+                alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">User Name</h5>
+                <p class="card-text">Passionate about programming.</p>
 
-        <div class="spinner-border"></div>
+                <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+        </div>
     </div>
+    <div class="container">
+         <h2>Spinner</h2>
+         <div class="spinner-border text-warning"></div>
 
+    </div> 
+    <div class="container">
+        <h2>Pagination</h2>
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#">Previous</a>
+
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">  
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>  
+            </li>    
+        </ul>
+
+    </div>
 </body>
 
 </html>

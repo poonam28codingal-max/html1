@@ -1,20 +1,51 @@
-var myForm = document.getElementById("myForm");
-var myInput = document.getElementById("myInput");
-var myItem = document.getElementById("myItem");
+window.onload = function () {
 
-myForm.addEventListener("submit", function (event) {
-    event.preventDefault();
-    createItem(myInput.value)
-})
+    var seconds = 0;
+    var milliseconds = 0;
 
-function createItem(inputItems) {
-    var items = `<li>${inputItems}
-    <button onclick="deleteElement(this)">Delete</button> </li>`
-    myItem.insertAdjacentHTML("beforeend", items)
-    myInput.value = ""
-    myInput.focus()
-}
+    var appendMilliseconds = document.getElementById("milliseconds");
+    var appendSeconds = document.getElementById("seconds");
 
-function deleteElement(ElementToDelete) {
-    ElementToDelete.parentElement.remove()
-}
+    var buttonStart = document.getElementById("button-start");
+    var buttonStop = document.getElementById("button-stop");
+    var buttonReset = document.getElementById("button-reset");
+
+    var Interval;
+
+    buttonStart.onclick = function () {
+        clearInterval(Interval);
+        Interval = setInterval(startTimer, 10);
+    };
+
+    function startTimer() {
+        milliseconds++;
+
+        if (milliseconds <= 9) {
+            appendMilliseconds.innerHTML = "0" + milliseconds;
+        }
+
+        if (milliseconds > 9) {
+            appendMilliseconds.innerHTML = milliseconds;
+        }
+
+        if (milliseconds > 99) {
+            seconds++;
+            appendSeconds.innerHTML = seconds < 10 ? "0" + seconds : seconds;
+            milliseconds = 0;
+            appendMilliseconds.innerHTML = "00";
+        }
+    }
+
+    buttonStop.onclick = function () {
+        clearInterval(Interval);
+    };
+
+    buttonReset.onclick = function () {
+        clearInterval(Interval);
+        milliseconds = 0;
+        seconds = 0;
+        appendMilliseconds.innerHTML = "00";
+        appendSeconds.innerHTML = "00";
+    };
+
+};

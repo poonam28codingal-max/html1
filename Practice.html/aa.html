@@ -1,0 +1,27 @@
+<html>
+        <head>
+                <title>Lucky draw</title>
+        </head>
+        <body>
+                <h1>Lucky Draw</h1>
+                <p>Welcome to the lucky draw!</p>
+                <input type="text" id="name" placeholder="Enter your name" required> <br> 
+                <p id="msg-name">    </p>
+
+                <input type="number" id="guess" placeholder="Enter your guess"  min="1" max="5" required> <br> 
+                <p id ="msg-guess">    </p>
+
+                <button onclick="checkGuess()">Submit</button>
+                <p id="result"></p>
+                <p id="timer"></p>
+
+                <script>
+                        var seconds=0;
+                        setInterval(function(){
+                                seconds++;
+                                document.getElementById("timer").innerHTML = "You have been here for  " + seconds + " seconds";
+                        }, 1000);
+                </script>
+
+        </body>
+</html>

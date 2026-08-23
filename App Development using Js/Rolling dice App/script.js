@@ -2,25 +2,30 @@
 var dices = ['&#9856;', '&#9857;', '&#9858;', '&#9859;', '&#9860;', '&#9861;'];
 var stopped = true;
 
-// for keep on changing the dice emojis
-function change() {
+//for keep on changing dice emoji
+function change()
+{
     var random = Math.floor(Math.random() * 6);
     dice.innerHTML = dices[random];
 }
-
-function stopStart() {
-    if (stopped) {
+function stopstart()
+{
+     if(stopped) 
+     {
         stopped = false;
-        // change function is called here to change the image for every 0.1 seconds
-        t = setInterval(change, 100);
-    } else {
-        clearInterval(t);
+        //change function is called change the image in very 0.1 second
+        t=setInterval(change, 100);
+
+     } 
+     else
+     {
         stopped = true;
-    }
+        clearInterval(t);
+     }
 }
 
-// invoking function
-window.onload = function () {
-    dice = document.getElementById("dice");
-    stopStart();
+//invoking the function
+window.onload = function(){
+    dice=document.getElementById("dice");
+    stopstart();
 }

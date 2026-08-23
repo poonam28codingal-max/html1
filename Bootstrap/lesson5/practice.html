@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Planet Explorer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <style>
+           body{
+            background: lightblue;
+           }
+           .navbar{
+            background: rgb(40, 9, 241);
+           }
+           .navbar-brand, .nav-link{
+            color: white;
+           }
+           .section-title{
+            color:navy;
+            margin: 20px  0 10px ;
+           }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm">
+        <a class="navbar-brand" href="#">My Planet Explorer</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Planets</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Stars</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="container mt-3">
+        <h4 class="section-title">Scanning the galaxy...</h4>
+        <div class="spinner-border text-primary" role="status"> </div>
+        <div class="spinner-border text-warning" role="status"> </div>
+
+        <h4 class="section-title">Featured Planets</h4>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Earth</h5>
+                        <p class="card-text">Our home planet, Only one known to have life.</p>
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+             </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Mars</h5>
+                        <p class="card-text">The red planet, a potential candidate for future colonization.</p>
+                        <a href="#" class="btn btn-primary">Explore</a>     
+                    </div>
+                </div>
+            </div>
+
+
+    </div>
+    <h4 class="section-title">Brows More Planets</h4>
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previos</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">next</a></li>
+    </ul>
+
+   
+</div>
+</body>

@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color:red;
+}
+a{
+    color:blue;
+    text-decoration: none;
+}
+a:hover{
+    color:yellow;
+    text-decoration: underline;
+}
+ul>li{
+    font-weight: bold;
+}
+ul li:hover{
+    color:green;
+}
+p::first-letter{
+    font-size: 200%;
+    color: orange;
+}
+a::after{
+    content:"🌌"
+}
+ul li::before{
+    content:"🚀 "
+}

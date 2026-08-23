@@ -1,0 +1,26 @@
+<html>
+   <head>
+      <title>
+         Java Script Arguements
+      </title>
+   </head>
+   <body>
+      <p>Finding the largest number with the help of Argument Object</p>
+      <p id="result"></p>
+      <script>
+         function findmax()
+         {
+             var i;
+             var sum=0;
+
+             for(i=0; i < arguments.length ; i++)
+             {
+                 sum= sum+arguments[i]
+             }
+             return sum
+         }
+         document.getElementById("result").innerHTML=findmax(7,2,4,1,9,8)
+      </script>
+
+   </body>
+</html>
