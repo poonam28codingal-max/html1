@@ -156,3 +156,81 @@ body {
     font-size: .8rem;
     border-radius: 3px;
 }
+/* style.css */
+
+/* Section background like the image */
+#social-media {
+    background: #2f3550;
+    /* dark bluish */
+}
+
+/* Heading style */
+.m-heading {
+    font-weight: 700;
+    margin-top: 6px;
+}
+
+/* Button cards */
+.media_link {
+    border: 2px solid #f2a900;
+    /* yellow border */
+    border-radius: 4px;
+    padding: 14px 18px;
+    margin-right: 18px;
+    background: transparent;
+    text-align: left;
+}
+
+/* Keep spacing like the screenshot */
+.row.pt-5 {
+    gap: 18px;
+}
+
+/* Text inside the buttons */
+.media_link h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Icons */
+.media_link i {
+    font-size: 22px;
+}
+
+/* Email button filled (already has bg-warning in HTML) */
+.media_link.bg-warning {
+    border: 2px solid #f2a900;
+}
+/* style.css */
+
+/* Footer background like the image */
+footer {
+    background: #2b2b2b;
+    /* dark grey */
+    width: 100%;
+}
+
+/* Center text + spacing */
+footer .container {
+    padding: 22px 0 !important;
+}
+
+/* Text styling */
+footer h5 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #8b8b8b;
+    /* muted grey */
+}
+
+/* Highlighted link text */
+footer a {
+    color: #f2a900 !important;
+    /* yellow */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
